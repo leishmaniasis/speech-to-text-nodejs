@@ -1,0 +1,25 @@
+{
+  "ServiceId": "com.ibm.cloudoe.orion.client.deploy",
+  "Params": {
+    "Target": {
+      "Url": "https://api.ng.bluemix.net",
+      "Org": "leishmaniasis",
+      "Space": "dev"
+    },
+    "Name": "speech-recognition-sample",
+    "Instrumentation": {},
+    "DevMode": {
+      "Instrumentation": {
+        "env": {
+          "ENABLE_BLUEMIX_DEV_MODE": true
+        },
+        "command": "",
+        "memory": "256MB"
+      },
+      "Packager": "com.ibm.perfectstorm.cloudoe.packager.LiveEditDeploymentPackager",
+      "On": false
+    }
+  },
+  "Path": "",
+  "Type": "Cloud Foundry"
+}
